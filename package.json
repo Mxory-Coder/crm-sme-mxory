@@ -1,0 +1,27 @@
+{
+  "name": "sme-connect",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "migration:run": "pnpm --filter=api migration:run",
+    "migration:generate": "pnpm --filter=api migration:generate",
+    "migration:revert": "pnpm --filter=api migration:revert",
+    "migration:show": "pnpm --filter=api migration:show"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3",
+    "@types/node": "^24.0.0",
+    "prettier": "^3.5.3",
+    "eslint": "^9.29.0"
+  },
+  "packageManager": "pnpm@11.8.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
