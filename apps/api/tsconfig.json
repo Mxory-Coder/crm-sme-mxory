@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "strictPropertyInitialization": false,
+    "baseUrl": "./",
+    "paths": {
+      "@sme/shared": ["../../packages/shared/dist"],
+      "@sme/ai": ["../../packages/ai/dist"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "test"]
+}
